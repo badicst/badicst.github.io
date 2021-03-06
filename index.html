@@ -1,38 +1,6 @@
 <!Doctype html>
 <html>
-<head>
-    <title>Google Charts Tutorial</title>
-    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
-    <script type="text/javascript">
-        google.charts.load('current', {
-            packages: ['corechart']
-        });
-    </script>
-</head>
-<body>
-    <div id="container" style="width: 550px; height: 400px; margin: 0 auto"></div>
-    <script language="JavaScript">
-        function drawChart() {
-            /* Define the chart to be drawn.*/
-            var data = google.visualization.arrayToDataTable([
-                ['Page Vist', 'Students Tutorial'],
-                ['2012', 10000],
-                ['2013', 23000],
-                ['2014', 46000],
-                ['2015', 49000],
-                ['2016', 55000],
-                ['2017', 100000]
-            ]);
-            var options = {
-                title: 'Page visit per year',
-                isStacked: true
-            };
-            /* Instantiate and draw the chart.*/
-            var chart = new google.visualization.BarChart(document.getElementById('container'));
-            chart.draw(data, options);
-        }
-        google.charts.setOnLoadCallback(drawChart);
-    </script>
+
     
 <style>div.sk-top-container {color: black;background-color: white;}div.sk-toggleable {background-color: white;}label.sk-toggleable__label {cursor: pointer;display: block;width: 100%;margin-bottom: 0;padding: 0.2em 0.3em;box-sizing: border-box;text-align: center;}div.sk-toggleable__content {max-height: 0;max-width: 0;overflow: hidden;text-align: left;background-color: #f0f8ff;}div.sk-toggleable__content pre {margin: 0.2em;color: black;border-radius: 0.25em;background-color: #f0f8ff;}input.sk-toggleable__control:checked~div.sk-toggleable__content {max-height: 200px;max-width: 100%;overflow: auto;}div.sk-estimator input.sk-toggleable__control:checked~label.sk-toggleable__label {background-color: #d4ebff;}div.sk-label input.sk-toggleable__control:checked~label.sk-toggleable__label {background-color: #d4ebff;}input.sk-hidden--visually {border: 0;clip: rect(1px 1px 1px 1px);clip: rect(1px, 1px, 1px, 1px);height: 1px;margin: -1px;overflow: hidden;padding: 0;position: absolute;width: 1px;}div.sk-estimator {font-family: monospace;background-color: #f0f8ff;margin: 0.25em 0.25em;border: 1px dotted black;border-radius: 0.25em;box-sizing: border-box;}div.sk-estimator:hover {background-color: #d4ebff;}div.sk-parallel-item::after {content: "";width: 100%;border-bottom: 1px solid gray;flex-grow: 1;}div.sk-label:hover label.sk-toggleable__label {background-color: #d4ebff;}div.sk-serial::before {content: "";position: absolute;border-left: 1px solid gray;box-sizing: border-box;top: 2em;bottom: 0;left: 50%;}div.sk-serial {display: flex;flex-direction: column;align-items: center;background-color: white;}div.sk-item {z-index: 1;}div.sk-parallel {display: flex;align-items: stretch;justify-content: center;background-color: white;}div.sk-parallel-item {display: flex;flex-direction: column;position: relative;background-color: white;}div.sk-parallel-item:first-child::after {align-self: flex-end;width: 50%;}div.sk-parallel-item:last-child::after {align-self: flex-start;width: 50%;}div.sk-parallel-item:only-child::after {width: 0;}div.sk-dashed-wrapped {border: 1px dashed gray;margin: 0.2em;box-sizing: border-box;padding-bottom: 0.1em;background-color: white;position: relative;}div.sk-label label {font-family: monospace;font-weight: bold;background-color: white;display: inline-block;line-height: 1.2em;}div.sk-label-container {position: relative;z-index: 2;text-align: center;}div.sk-container {display: inline-block;position: relative;}</style><div class="sk-top-container"><div class="sk-container"><div class="sk-item sk-dashed-wrapped"><div class="sk-label-container"><div class="sk-label sk-toggleable"><input class="sk-toggleable__control sk-hidden--visually" id="220ab26e-d671-48d2-ae22-b9925d81fb89" type="checkbox" ><label class="sk-toggleable__label" for="220ab26e-d671-48d2-ae22-b9925d81fb89">Pipe</label><div ><pre></pre></div></div></div><div class="sk-serial"><div class="sk-item"><div class="sk-estimator sk-toggleable"><input class="sk-toggleable__control sk-hidden--visually" id="a50706dc-7e16-4701-a918-bb32a75bc0de" type="checkbox" ><label class="sk-toggleable__label" for="a50706dc-7e16-4701-a918-bb32a75bc0de">ReadAlerts</label><div ><pre>rows:16000</pre></div></div></div><div class="sk-item sk-dashed-wrapped"><div class="sk-label-container"><div class="sk-label sk-toggleable"><input class="sk-toggleable__control sk-hidden--visually" id="10f7c3bf-bb84-4b6b-8a22-fa909b52d5d1" type="checkbox" ><label class="sk-toggleable__label" for="10f7c3bf-bb84-4b6b-8a22-fa909b52d5d1">ptransff: PPipe</label><div ><pre></pre></div></div></div><div class="sk-parallel"><div class="sk-parallel-item"><div class="sk-item"><div class="sk-label-container"><div class="sk-label sk-toggleable"><input class="sk-toggleable__control sk-hidden--visually" id="31723e3e-63fe-49f5-be80-a286b652113f" type="checkbox" ><label class="sk-toggleable__label" for="31723e3e-63fe-49f5-be80-a286b652113f">ExtractFeatures_00</label><div ><pre>parallel</pre></div></div></div><div class="sk-serial"><div class="sk-item"><div class="sk-serial"><div class="sk-item"><div class="sk-estimator sk-toggleable"><input class="sk-toggleable__control sk-hidden--visually" id="ce23d1e8-9f2f-4d1a-a986-10443893156a" type="checkbox" ><label class="sk-toggleable__label" for="ce23d1e8-9f2f-4d1a-a986-10443893156a">FilterAlerts</label><div ><pre>rows:3200
     N    P  rate
@@ -124,5 +92,5 @@ p
             <img src="thresholds_SC04.png" width="1420" height="260" alt="" title="">
     
             
-</body>
+
 </html>
