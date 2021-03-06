@@ -33,5 +33,96 @@
         }
         google.charts.setOnLoadCallback(drawChart);
     </script>
+    
+<style>div.sk-top-container {color: black;background-color: white;}div.sk-toggleable {background-color: white;}label.sk-toggleable__label {cursor: pointer;display: block;width: 100%;margin-bottom: 0;padding: 0.2em 0.3em;box-sizing: border-box;text-align: center;}div.sk-toggleable__content {max-height: 0;max-width: 0;overflow: hidden;text-align: left;background-color: #f0f8ff;}div.sk-toggleable__content pre {margin: 0.2em;color: black;border-radius: 0.25em;background-color: #f0f8ff;}input.sk-toggleable__control:checked~div.sk-toggleable__content {max-height: 200px;max-width: 100%;overflow: auto;}div.sk-estimator input.sk-toggleable__control:checked~label.sk-toggleable__label {background-color: #d4ebff;}div.sk-label input.sk-toggleable__control:checked~label.sk-toggleable__label {background-color: #d4ebff;}input.sk-hidden--visually {border: 0;clip: rect(1px 1px 1px 1px);clip: rect(1px, 1px, 1px, 1px);height: 1px;margin: -1px;overflow: hidden;padding: 0;position: absolute;width: 1px;}div.sk-estimator {font-family: monospace;background-color: #f0f8ff;margin: 0.25em 0.25em;border: 1px dotted black;border-radius: 0.25em;box-sizing: border-box;}div.sk-estimator:hover {background-color: #d4ebff;}div.sk-parallel-item::after {content: "";width: 100%;border-bottom: 1px solid gray;flex-grow: 1;}div.sk-label:hover label.sk-toggleable__label {background-color: #d4ebff;}div.sk-serial::before {content: "";position: absolute;border-left: 1px solid gray;box-sizing: border-box;top: 2em;bottom: 0;left: 50%;}div.sk-serial {display: flex;flex-direction: column;align-items: center;background-color: white;}div.sk-item {z-index: 1;}div.sk-parallel {display: flex;align-items: stretch;justify-content: center;background-color: white;}div.sk-parallel-item {display: flex;flex-direction: column;position: relative;background-color: white;}div.sk-parallel-item:first-child::after {align-self: flex-end;width: 50%;}div.sk-parallel-item:last-child::after {align-self: flex-start;width: 50%;}div.sk-parallel-item:only-child::after {width: 0;}div.sk-dashed-wrapped {border: 1px dashed gray;margin: 0.2em;box-sizing: border-box;padding-bottom: 0.1em;background-color: white;position: relative;}div.sk-label label {font-family: monospace;font-weight: bold;background-color: white;display: inline-block;line-height: 1.2em;}div.sk-label-container {position: relative;z-index: 2;text-align: center;}div.sk-container {display: inline-block;position: relative;}</style><div class="sk-top-container"><div class="sk-container"><div class="sk-item sk-dashed-wrapped"><div class="sk-label-container"><div class="sk-label sk-toggleable"><input class="sk-toggleable__control sk-hidden--visually" id="220ab26e-d671-48d2-ae22-b9925d81fb89" type="checkbox" ><label class="sk-toggleable__label" for="220ab26e-d671-48d2-ae22-b9925d81fb89">Pipe</label><div ><pre></pre></div></div></div><div class="sk-serial"><div class="sk-item"><div class="sk-estimator sk-toggleable"><input class="sk-toggleable__control sk-hidden--visually" id="a50706dc-7e16-4701-a918-bb32a75bc0de" type="checkbox" ><label class="sk-toggleable__label" for="a50706dc-7e16-4701-a918-bb32a75bc0de">ReadAlerts</label><div ><pre>rows:16000</pre></div></div></div><div class="sk-item sk-dashed-wrapped"><div class="sk-label-container"><div class="sk-label sk-toggleable"><input class="sk-toggleable__control sk-hidden--visually" id="10f7c3bf-bb84-4b6b-8a22-fa909b52d5d1" type="checkbox" ><label class="sk-toggleable__label" for="10f7c3bf-bb84-4b6b-8a22-fa909b52d5d1">ptransff: PPipe</label><div ><pre></pre></div></div></div><div class="sk-parallel"><div class="sk-parallel-item"><div class="sk-item"><div class="sk-label-container"><div class="sk-label sk-toggleable"><input class="sk-toggleable__control sk-hidden--visually" id="31723e3e-63fe-49f5-be80-a286b652113f" type="checkbox" ><label class="sk-toggleable__label" for="31723e3e-63fe-49f5-be80-a286b652113f">ExtractFeatures_00</label><div ><pre>parallel</pre></div></div></div><div class="sk-serial"><div class="sk-item"><div class="sk-serial"><div class="sk-item"><div class="sk-estimator sk-toggleable"><input class="sk-toggleable__control sk-hidden--visually" id="ce23d1e8-9f2f-4d1a-a986-10443893156a" type="checkbox" ><label class="sk-toggleable__label" for="ce23d1e8-9f2f-4d1a-a986-10443893156a">FilterAlerts</label><div ><pre>rows:3200
+    N    P  rate
+ 2560  640   0.2</pre></div></div></div><div class="sk-item"><div class="sk-estimator sk-toggleable"><input class="sk-toggleable__control sk-hidden--visually" id="d53c0512-154b-4d27-93a2-26c54ceed5a7" type="checkbox" ><label class="sk-toggleable__label" for="d53c0512-154b-4d27-93a2-26c54ceed5a7">ExtractFeatures_00</label><div ><pre>rows:3200</pre></div></div></div><div class="sk-item"><div class="sk-estimator sk-toggleable"><input class="sk-toggleable__control sk-hidden--visually" id="af348eee-8370-4401-9624-828e10f0cbe6" type="checkbox" ><label class="sk-toggleable__label" for="af348eee-8370-4401-9624-828e10f0cbe6">Transformer</label><div ><pre>rows:3200
+transformer:
+quantile</pre></div></div></div><div class="sk-item"><div class="sk-estimator sk-toggleable"><input class="sk-toggleable__control sk-hidden--visually" id="4d88b5b7-1573-4e89-9f81-7170a19b3169" type="checkbox" ><label class="sk-toggleable__label" for="4d88b5b7-1573-4e89-9f81-7170a19b3169">Train</label><div ><pre>rows:7
+        p  TP  FP  rate
+sc                     
+SC00  0.2   1   0   0.0
+SC00  0.4   1   0   0.0
+SC00  0.6   1   0   0.0
+SC00  1.0   1   0   0.0
+SC00  1.4   1   0   0.0
+SC00  1.7   1   0   0.0
+SC00  2.0   1   0   0.0</pre></div></div></div></div></div></div></div></div><div class="sk-parallel-item"><div class="sk-item"><div class="sk-label-container"><div class="sk-label sk-toggleable"><input class="sk-toggleable__control sk-hidden--visually" id="68e04a37-c591-4ee4-9160-824c72f5a857" type="checkbox" ><label class="sk-toggleable__label" for="68e04a37-c591-4ee4-9160-824c72f5a857">ExtractFeatures_01</label><div ><pre>parallel</pre></div></div></div><div class="sk-serial"><div class="sk-item"><div class="sk-serial"><div class="sk-item"><div class="sk-estimator sk-toggleable"><input class="sk-toggleable__control sk-hidden--visually" id="9b13e90e-e6d0-4923-adf4-1e480e124981" type="checkbox" ><label class="sk-toggleable__label" for="9b13e90e-e6d0-4923-adf4-1e480e124981">FilterAlerts</label><div ><pre>rows:3200
+    N    P  rate
+ 2240  960   0.3</pre></div></div></div><div class="sk-item"><div class="sk-estimator sk-toggleable"><input class="sk-toggleable__control sk-hidden--visually" id="814144d8-a03f-4200-b53a-5529eed211b6" type="checkbox" ><label class="sk-toggleable__label" for="814144d8-a03f-4200-b53a-5529eed211b6">ExtractFeatures_01</label><div ><pre>rows:3200</pre></div></div></div><div class="sk-item"><div class="sk-estimator sk-toggleable"><input class="sk-toggleable__control sk-hidden--visually" id="2c9a2cb1-36f4-44fa-85c8-c9be8f5a643c" type="checkbox" ><label class="sk-toggleable__label" for="2c9a2cb1-36f4-44fa-85c8-c9be8f5a643c">Transformer</label><div ><pre>rows:3200
+transformer:
+quantile</pre></div></div></div><div class="sk-item"><div class="sk-estimator sk-toggleable"><input class="sk-toggleable__control sk-hidden--visually" id="66e9123a-b902-4148-858a-60cd85a3c7d9" type="checkbox" ><label class="sk-toggleable__label" for="66e9123a-b902-4148-858a-60cd85a3c7d9">Train</label><div ><pre>rows:7
+        p   TP    FP  rate
+sc                        
+SC01  0.2    0     0   NaN
+SC01  0.4    0     0   NaN
+SC01  0.6    0     0   NaN
+SC01  1.0    0     0   NaN
+SC01  1.4    0     0   NaN
+SC01  1.7  829  1237   0.6
+SC01  2.0  829  1237   0.6</pre></div></div></div></div></div></div></div></div><div class="sk-parallel-item"><div class="sk-item"><div class="sk-label-container"><div class="sk-label sk-toggleable"><input class="sk-toggleable__control sk-hidden--visually" id="e177d1f3-d95b-4967-9007-b8799155d674" type="checkbox" ><label class="sk-toggleable__label" for="e177d1f3-d95b-4967-9007-b8799155d674">ExtractFeatures_02</label><div ><pre>parallel</pre></div></div></div><div class="sk-serial"><div class="sk-item"><div class="sk-serial"><div class="sk-item"><div class="sk-estimator sk-toggleable"><input class="sk-toggleable__control sk-hidden--visually" id="8d521a1e-fdc9-4ccb-8d06-c73d3ff9a88b" type="checkbox" ><label class="sk-toggleable__label" for="8d521a1e-fdc9-4ccb-8d06-c73d3ff9a88b">FilterAlerts</label><div ><pre>rows:3200
+    N     P  rate
+ 1760  1440  0.45</pre></div></div></div><div class="sk-item"><div class="sk-estimator sk-toggleable"><input class="sk-toggleable__control sk-hidden--visually" id="bbdb3230-02dd-4618-84a4-96a2345b1638" type="checkbox" ><label class="sk-toggleable__label" for="bbdb3230-02dd-4618-84a4-96a2345b1638">ExtractFeatures_02</label><div ><pre>rows:3200</pre></div></div></div><div class="sk-item"><div class="sk-estimator sk-toggleable"><input class="sk-toggleable__control sk-hidden--visually" id="bd760226-f649-4b74-b185-996d5c999ada" type="checkbox" ><label class="sk-toggleable__label" for="bd760226-f649-4b74-b185-996d5c999ada">Transformer</label><div ><pre>rows:3200
+transformer:
+quantile</pre></div></div></div><div class="sk-item"><div class="sk-estimator sk-toggleable"><input class="sk-toggleable__control sk-hidden--visually" id="4d314323-3c39-4c41-826a-15072ce939c8" type="checkbox" ><label class="sk-toggleable__label" for="4d314323-3c39-4c41-826a-15072ce939c8">Train</label><div ><pre>rows:7
+        p    TP   FP  rate
+sc                        
+SC02  0.2   128   16  0.11
+SC02  0.4   570  128  0.18
+SC02  0.6   954  311  0.25
+SC02  1.0  1094  416  0.28
+SC02  1.4  1261  620  0.33
+SC02  1.7  1329  732  0.36
+SC02  2.0  1329  732  0.36</pre></div></div></div></div></div></div></div></div><div class="sk-parallel-item"><div class="sk-item"><div class="sk-label-container"><div class="sk-label sk-toggleable"><input class="sk-toggleable__control sk-hidden--visually" id="054f6de4-7e33-4261-892f-cd884b32d71c" type="checkbox" ><label class="sk-toggleable__label" for="054f6de4-7e33-4261-892f-cd884b32d71c">ExtractFeatures_03</label><div ><pre>parallel</pre></div></div></div><div class="sk-serial"><div class="sk-item"><div class="sk-serial"><div class="sk-item"><div class="sk-estimator sk-toggleable"><input class="sk-toggleable__control sk-hidden--visually" id="fb96d0ee-3386-4580-9bf9-a99d9ed31841" type="checkbox" ><label class="sk-toggleable__label" for="fb96d0ee-3386-4580-9bf9-a99d9ed31841">FilterAlerts</label><div ><pre>rows:3200
+    N     P  rate
+ 1920  1280   0.4</pre></div></div></div><div class="sk-item"><div class="sk-estimator sk-toggleable"><input class="sk-toggleable__control sk-hidden--visually" id="81f9afba-dfa9-4681-9acd-c660209c1303" type="checkbox" ><label class="sk-toggleable__label" for="81f9afba-dfa9-4681-9acd-c660209c1303">ExtractFeatures_03</label><div ><pre>rows:3200</pre></div></div></div><div class="sk-item"><div class="sk-estimator sk-toggleable"><input class="sk-toggleable__control sk-hidden--visually" id="333af923-b6ac-4b80-97cd-9846f48d465f" type="checkbox" ><label class="sk-toggleable__label" for="333af923-b6ac-4b80-97cd-9846f48d465f">Transformer</label><div ><pre>rows:3200
+transformer:
+quantile</pre></div></div></div><div class="sk-item"><div class="sk-estimator sk-toggleable"><input class="sk-toggleable__control sk-hidden--visually" id="7d052073-2e12-4dcc-a2c4-e2c3af4324a9" type="checkbox" ><label class="sk-toggleable__label" for="7d052073-2e12-4dcc-a2c4-e2c3af4324a9">Train</label><div ><pre>rows:7
+        p    TP   FP  rate
+sc                        
+SC03  0.2   599   71  0.11
+SC03  0.4   785  127  0.14
+SC03  0.6   921  191  0.17
+SC03  1.0  1129  347  0.24
+SC03  1.4  1149  371  0.24
+SC03  1.7  1164  396  0.25
+SC03  2.0  1198  459  0.28</pre></div></div></div></div></div></div></div></div><div class="sk-parallel-item"><div class="sk-item"><div class="sk-label-container"><div class="sk-label sk-toggleable"><input class="sk-toggleable__control sk-hidden--visually" id="9001b93b-875c-42d7-8f44-1f38c2557369" type="checkbox" ><label class="sk-toggleable__label" for="9001b93b-875c-42d7-8f44-1f38c2557369">ExtractFeatures_04</label><div ><pre>parallel</pre></div></div></div><div class="sk-serial"><div class="sk-item"><div class="sk-serial"><div class="sk-item"><div class="sk-estimator sk-toggleable"><input class="sk-toggleable__control sk-hidden--visually" id="011ef99f-4640-480b-9a5c-74222a1aa5c2" type="checkbox" ><label class="sk-toggleable__label" for="011ef99f-4640-480b-9a5c-74222a1aa5c2">FilterAlerts</label><div ><pre>rows:3200
+    N     P  rate
+ 2080  1120  0.35</pre></div></div></div><div class="sk-item"><div class="sk-estimator sk-toggleable"><input class="sk-toggleable__control sk-hidden--visually" id="a10030e7-eacd-43fd-9e95-484cac2f97e5" type="checkbox" ><label class="sk-toggleable__label" for="a10030e7-eacd-43fd-9e95-484cac2f97e5">ExtractFeatures_04</label><div ><pre>rows:3200</pre></div></div></div><div class="sk-item"><div class="sk-estimator sk-toggleable"><input class="sk-toggleable__control sk-hidden--visually" id="e1bf1160-d911-48c6-a76f-d65a015022aa" type="checkbox" ><label class="sk-toggleable__label" for="e1bf1160-d911-48c6-a76f-d65a015022aa">Transformer</label><div ><pre>rows:3200
+transformer:
+quantile</pre></div></div></div><div class="sk-item"><div class="sk-estimator sk-toggleable"><input class="sk-toggleable__control sk-hidden--visually" id="b77ef3ac-cdf9-4d46-b13c-ce4c52ae79e9" type="checkbox" ><label class="sk-toggleable__label" for="b77ef3ac-cdf9-4d46-b13c-ce4c52ae79e9">Train</label><div ><pre>rows:7
+        p    TP    FP  rate
+sc                         
+SC04  0.2     0     0   NaN
+SC04  0.4     0     0   NaN
+SC04  0.6     0     0   NaN
+SC04  1.0     0     0   NaN
+SC04  1.4     0     0   NaN
+SC04  1.7     0     0   NaN
+SC04  2.0  1120  2080  0.65</pre></div></div></div></div></div></div></div></div></div></div><div class="sk-item"><div class="sk-estimator sk-toggleable"><input class="sk-toggleable__control sk-hidden--visually" id="f41836bd-2059-4d35-947f-dc649c5d6c61" type="checkbox" ><label class="sk-toggleable__label" for="f41836bd-2059-4d35-947f-dc649c5d6c61">Concat</label><div ><pre>rows:35</pre></div></div></div><div class="sk-item"><div class="sk-estimator sk-toggleable"><input class="sk-toggleable__control sk-hidden--visually" id="34cc4b25-694b-4011-b730-3a9bb8679bf9" type="checkbox" ><label class="sk-toggleable__label" for="34cc4b25-694b-4011-b730-3a9bb8679bf9">Statistics</label><div ><pre>     true_pos  false_pos   fp_rate
+p                                 
+0.2       728         87  0.106748
+0.4      1356        255  0.158287
+0.6      1876        502  0.211102
+1.0      2224        763  0.255440
+1.4      2411        991  0.291299
+1.7      3323       2365  0.415788
+2.0      4477       4508  0.501725</pre><div></div></div></div></div></div></div>
+            <center>
+            <img src="fprate.png" width="380" height="300" alt="" title="">
+            <img src="tp_fp.png" width="380" height="300" alt="" title="">
+            </center>
+            <br>
+            <img src="thresholds_SC00.png" width="1420" height="260" alt="" title="">
+            <br>
+            <img src="thresholds_SC01.png" width="1420" height="260" alt="" title="">
+            <br>
+            <img src="thresholds_SC02.png" width="1420" height="260" alt="" title="">
+            <br>
+            <img src="thresholds_SC03.png" width="1420" height="260" alt="" title="">
+            <br>
+            <img src="thresholds_SC04.png" width="1420" height="260" alt="" title="">
+    
+            
 </body>
 </html>
